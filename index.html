@@ -4,6 +4,7 @@
 <!--Content of the head contents meta data attributes that does not appear on the webpage itsefl-->
     <head>
         <meta charset="utf=8" >
+        <meta http-equiv="X-UA-Compatitble" content="IE=edge">
         <meta name="author" content="Alex Tema Abanke" > 
             <!--Description that will appear whenever the webpage is searched on the web browser -->
         <meta name="description" content="Welcome to Alex Tema Abanke Profolio Web Page " > 
@@ -17,7 +18,7 @@
     </head>
 
     <!--This is the body -->
-    <body style="background-color: grey ;">
+    <body >
         <!--Using (div) is a way to divide content separatly from one another-->
        <div class="container">
         <div class="profile">
@@ -27,15 +28,17 @@
            </div> 
            <div>
             <h1 class="profile_name">
-                Alex Tema Abanke
+                <!-- Use <Span> to style specific part of my name -->
+                <span  class="profile_name_firstName"> Alex </span>
+                <span class="profile_name_lastName"> Tema Abanke </span>
             </h1>
-            <p  style="color:white ;"   class="profile_title"> Software/DevOps Engineer </p>
-            <p style="color:white ;"    class="description">
+            <p   class="profile_title"> Software/DevOps Engineer </p>
+            <p   class="description">
                  Student at the University of Maryland College Park
-                pursing a degree in Computer Science 
+                pursing a Computer Science degree 
             </p>
             <!--INSERT LINK TO RESUME PDF -->
-            <a class="downloadHere" href="ATA_RESUME.pdf" download="Resume.pdf"> DownloadResumeHere</a>
+            <a class="downloadBtn" href="ATA_RESUME.pdf" download="Resume.pdf"> DownloadMyResumeHere</a>
            </div>
 
          </div>
