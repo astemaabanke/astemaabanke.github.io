@@ -6,8 +6,8 @@
     box-sizing: border-box;
 }
 :root{
-    --primary-color: #ff7613;
-    --text-color: #727171;
+    --primary-color: yellow;
+    --text-color: red;
 
 }
 /*This controls the font size of the whole html page */
@@ -37,10 +37,26 @@ a {
 .title{
     color: var(--primary-color);
     font-weight: 700;
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-size: 2rem;
+    font-weight: 700;
     text-transform: uppercase;
 
+}
+.item_preTitle{
+    font-style: 1.4rem;
+    color: var(--text-color);
+    font-weight: 300;
+}
+.item_title{
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 500;
+    margin: 0.8rem 0;
+}
+.item_subtitle{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 400;
 }
 /* Layouts syles
 This will be in charge of moving the picture width around the html file  
@@ -71,6 +87,25 @@ gap: 4rem
 .profile{
     grid-column: 1 / -1;
     margin-bottom: 2rem;
+}
+.group-1,
+.group-2{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.group-3{
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.group-3 > div{
+    flex: 1;
 }
 /* style for the profile container */
 .profile_container{
@@ -134,5 +169,48 @@ gap: 4rem
 .edu_item{
     margin-top: 2rem;
 }
+/* Certication_item  */
+.certification_item{
+    margin-top: 2rem;
+}
+.interest_items{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
 
+}
+.interest_item{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--text-color);
+}
+.interest_item svg{
+    width: 2rem;
+}
+/* socials items */
+.social_items {
+    margin-top: 2rem;
+}
+.social_item {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--text-color);
+
+}
+.social_item:hover {
+    color: var(--primary-color);
+}
+.social_item svg {
+    width: 2rem;
+}
 

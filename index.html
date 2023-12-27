@@ -14,6 +14,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
          <!--Place holder for CSS files (Styling Sheet) -->
         <link rel="stylesheet" href="style.css">
+
+        <!--This will import icons from another website -->
+        <script src="https://unpkg.com/feather-icons"></script>
         
     </head>
 
@@ -45,9 +48,9 @@
                 </div> <!--End of profile name-->
            </div>
             <div class="group-1" >
-                <div class="umdlogo description">
-                    <img  src="umdlogo.png" height="300" alt="umd logo">
-                </div>
+               <div class="umdlogo description">
+                    <img  src="umdlogo.png" height="295"  alt="umd logo">
+                </div> 
                 <div class="skills">
                         <h3 class="title" > Expertise </h3>
                             <!--- Make bullet points of the skills I want to put-->
@@ -58,28 +61,92 @@
                              <li> Git</li>
                          </ul>
                      </div>
+                    <!---- <div class="java_logo" >
+                        <img src="java_logo.png" height="300" width="300" alt="java_logo">
+                    </div> -->
                 <div class= "edu">
                     <h3 class="title"> Education </h3> 
                     <div class="edu_item">
-                      <p class="item-preTitle"> 2023-2025 </p>
+                      <p class="item_preTitle"> 2023-2025 </p>
                       <h4 class="item_title" > BS in Computer Science</h4>
                       <p class="item_subtitle" > Univeristy of Maryland College Park</p>
                     </div>
                     <div class="edu_item">
-                        <p class="item-preTitle"> 2021-2022 </p>
+                        <p class="item_preTitle"> 2021-2022 </p>
                         <h4 class="item_title" > AS in Computer Science</h4>
                         <p class="item_subtitle" > Hagerstown Community College </p>
-                      </div>
+                    </div>
+                    <div class="edu_item">
+                        <h3 class="title"> Certification </h3>
+                        <div class="certification_item">
+                            <p class="item_preTitle" > 2023 </p>
+                            <h4 class="item_title"> AWS Solution Architect Associates </h4>
+                            <p class="description" > Built resillient, scallable, and redundant </p>
+                            <p class="description"> secured applications infrastructure in AWS </p>
+                        </div>
+                    </div>
                 
         
                 </div>
             </div>
-           
+            <div class="group-2">
+                <div class="interest">
+                    <h3 class="title"> Interest</h3>
+                    <div class="interest_items">
+                        <div class="interest_item" >
+                            <i data-feather="music"></i>
+                            <span> Music </span>
+                        </div>  
+                        <div class="interest_item" >
+                            <i data-feather="book"></i>
+                            <span> Book </span>
+                        </div>  
+                        <div class="interest_item" >
+                            <i data-feather="cloud"></i>
+                            <span> AWS </span>
+                        </div>  
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="group-3">
+                <div class="contact">
+                    <h3 class="title"> Contact</h3>
+                    <div class="contact_info">
+                        <p class="description">
+                            College Park, Maryland
+                        </p>
+                        <p class="description">
+                            atemaaba@terpmail.umd.edu
+                        </p>
+                       
+
+                    </div>
+                </div>
+                <div class="socials" >
+                    <h3 class="title">Socials</h3>
+                    <div class="social_items">
+                        <a href="https://github.com/astemaabanke" class="social_item">
+                            <i data-feather="github"></i>
+                            <span>atemaaba</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/alextemaabanke/" class="social_item">
+                            <i data-feather="linkedin"></i>
+                            <span> AlexTemaAbanke</span>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
 
        </div>
        
-         <div class="group-2"></div>
-         <div class="group-3"></div>
+       <script>
+        feather.replace();
+      </script>
+
+        
         
        
     </body>
